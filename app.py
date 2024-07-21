@@ -29,7 +29,7 @@ if scatter_button:
     st.write('Construyendo un gráfico de dispersión para el precio vs. el año del vehículo')
     
     # Crear el gráfico de dispersión con Plotly Express
-    fig_scatter = px.scatter(car_data, x='year', y='price', color='fuelType', title='Precio vs. Año del Vehículo')
+    fig_scatter = px.scatter(car_data, x='odometer', y='price', title='Precio vs. Año del Vehículo')
     
     # Mostrar el gráfico de dispersión interactivo con Streamlit
     st.plotly_chart(fig_scatter)
